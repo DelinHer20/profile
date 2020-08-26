@@ -1,0 +1,74 @@
+body{
+    margin:0px;
+    background-color: #222831;
+    color:#eeee;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h2{
+    font-family: 'Caveat', cursive;
+    font-size:2rem;
+    margin-bottom: auto;
+    text-align:left;
+    color:#F08080;
+
+    
+}
+
+.wrapper{
+    width: 720px;
+    padding:70px;
+    margin:0 auto;
+}
+
+
+/*pertama*/
+
+.intro {
+    text-align:left;
+    color:white;
+    line-height: 1.5;
+}
+
+.foto{
+    float:right;
+    border-radius: 50%;
+    margin-left: 30px;
+    width:200px;
+    
+}
+
+.atribut{
+    position: absolute;
+    left:280px;
+    top:50px;
+}
+.title{
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-family: 'Caveat', cursive;
+    color:#F08080;
+}
+
+/*kedua*/
+
+.profil{
+    float:left;
+    margin-right:50px;
+    border-radius: 50%;
+    width: 200px;
+    
+}
+
+.gambar{
+    float:right;
+    margin-right:30px;
+    border-radius:50%;
+    width:200px;
+}
+
+.footer{
+    background-color:#CD5C5C;
+    padding:10px;
+}
