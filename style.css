@@ -1,75 +1,219 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* syntak css */
+
 body{
-    margin:0px;
-    background-color: #222831;
-    color:#eeee;
-    text-align: center;
-    font-family: 'Fira Sans', sans-serif;
-}
-
-h2{
-    font-family: 'Caveat', cursive;
-    font-size:2rem;
-    margin-bottom: auto;
-    text-align:left;
-    color:#F08080;
-
-    
-}
-
-.wrapper{
-    width: 720px;
-    padding:70px;
-    margin:0 auto;
-}
-
-
-/*pertama*/
-
-.intro {
-    text-align:left;
+    font:16px/28px arial,sans-serif;
+    background-image: url(delin1.png);
     color:white;
-    line-height: 1.5;
 }
 
-.foto{
-    float:right;
-    border-radius: 50%;
-    margin-left: 30px;
-    width:200px;
+.container{
+    width:800px;
+    margin:auto;
+    padding:50px;
+    background-color: #222831;
     
 }
 
-.atribut{
-    position: absolute;
-    left:280px;
-    top:50px;
+/*bagian satu*/
+
+.satu{
+    padding:20px;
 }
-.title{
-    font-size: 4.5rem;
-    font-weight: bold;
+
+
+.satu .nama{
     font-family: 'Caveat', cursive;
-    color:#F08080;
+    font-weight:bold;
+    font-size:3.125em;
+    color:salmon;
+    text-align: center;
+    padding:30px;
 }
 
-/*kedua*/
+.satu .isi{
+    padding:30px;
+    text-align: left;
+    color:#C0C0C0
+}
 
-.profil{
+.satu .gambar{
+    width:150px;
     float:left;
-    margin-right:50px;
-    border-radius: 50%;
-    width: 200px;
+    border-radius:50%;
+    padding:30px;
+}
+
+.btn{
+    text-decoration:none;
+    text-align:center;
+    color:rgb(255, 250, 250);
+    padding:5px 10px;
+    border-radius: 5px;
+
+}
+
+.no1{
+    background-color: rgba(66, 163, 185, 0.7);
+    box-shadow:0 4px 3px 0 rgb(22, 22, 24);
+}
+
+.no1:hover{
+    background-color:rgba(66, 163, 185, 1);
+} 
+
+/*dua*/
+
+.dua{
+    padding:30px;
+}
+
+.dua .judul{
+    text-align:center;
+    font-size:1.5625em;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bold;
+    color:#E9967A;
+    padding:20px;
+
+}
+
+.dua .skill{
+    color:#87CEFA;
+    font-size:1.125em;
+    font-weight: bold;
+    padding:20px;
+    text-align:left;
+}
+
+.dua .artikel{
+    color:#C0C0C0;
+    text-align:left;
+}
+
+.dua .gambar2{
+    width:150px;
+    float:right;
+    border-radius:50%;
+    padding:30px;
     
 }
 
-.gambar{
-    float:right;
-    margin-right:30px;
+/*Tiga*/
+
+.tiga{
+    padding:30px;
+}
+
+.judul2{
+    text-align:left;
+    font-size:1.5625em;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bold;
+    color: #E9967A;
+    padding:20px;
+}
+
+.gambar3{
+    width:180px;
+    float:left;
     border-radius:50%;
-    width:200px;
+    padding:30px;
+}
+
+.tiga ol li{
+    padding:5px;
+    color:#C0C0C0;
+    text-align:justify;
 }
 
 .footer{
-    background-color:#CD5C5C;
-    padding:10px;
-    width: 100%;
+    padding:15px;;
+    background-color: #B0C4DE;
+    width:870px;
+    margin:auto;
 }
+
+.footer .copy{
+    text-align:center;
+    color:black;
+    font-size:12px;
+    font-weight: bold;
+}
+
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
